@@ -5,10 +5,16 @@ import "hardhat/console.sol";
 
 contract HelloWorld {
 
-    //string public message;
+    string public message;
 
     constructor() {
-        console.log("Testing testing, is this thing on?");
+        message = "Hello World!";
+        console.log("Your message is:", message);
+    }
+
+    function changeMessage(string memory newMessage) public {
+        message = newMessage;
+        console.log("Your new Message is:", message);
     }
 
 }
