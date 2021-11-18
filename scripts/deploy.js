@@ -4,10 +4,6 @@ const main = async () => {
     await helloContract.deployed();
 
     console.log("Contract deployed to:", helloContract.address);
-
-    let newMessage = await helloContract.changeMessage("This is the new message I just updated");
-
-    await newMessage.wait();
 };
 
 const runMain = async () => {

@@ -14,7 +14,6 @@ contract HelloWorld {
 
     function changeMessage(string memory newMessage) public {
         message = newMessage;
-        console.log("Your new Message is:", message);
+        console.log("Your new message is:", message);
     }
-
 }
